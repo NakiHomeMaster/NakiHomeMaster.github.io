@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 쌓기 장인</title>
+    <style>
+        /* reset */
+        * {margin:0;padding:0;box-sizing:border-box;font-size:inherit;font-weight: normal;color: inherit;}
+        ul,ol {list-style: none;}
+        a {text-decoration: none;}
+        img {vertical-align: middle;}
+        body {line-height: 1;}
+
+        /* sec01 */
+        h1 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+        .sec01 {
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sec01 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sec01 p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sec01 .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec01 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sec01 figure {
+            float: left;
+            width: 33.333333%;
+            padding: 0 15px;
+        }
+        .sec01 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sec01 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sec01 figure a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #333;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        /* sec02 */
+        .sec02 {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .sec02 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sec02 p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sec02 .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec02 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sec02 figure {
+            float: left;
+            width: 25%;
+            padding: 0 15px;
+        }
+        .sec02 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sec02 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sec02 figure a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #333;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        /* sec03 */
+        .sec03 {
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sec03 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sec03 p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sec03 .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec03 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sec03 figure {
+            float: left;
+            width: 20%;
+            padding: 0 15px;
+        }
+        .sec03 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sec03 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sec03 figure a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #333;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        /* sec04 */
+        .sec04 {
+            padding: 100px 0;
+            text-align: center;
+        }
+        .sec04 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sec04 p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sec04 .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec04 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sec04 figure {
+            float: left;
+            width: 16.666666%;
+            padding: 0 15px;
+        }
+        .sec04 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sec04 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sec04 figure a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #333;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        /* sec05 */
+        .sec05 {
+            padding: 100px 0;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .sec05 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .sec05 p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .sec05 .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .sec05 .container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .sec05 figure {
+            float: left;
+            width: 50%;
+            padding: 0 15px;
+        }
+        .sec05 figure img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .sec05 figure p {
+            color: #f00;
+            margin-bottom: 20px;
+        }
+        .sec05 figure a {
+            display: block;
+            width: 160px;
+            height: 30px;
+            line-height: 30px;
+            background-color: #333;
+            color: #fff;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>레이아웃 쌓기 장인</h1>
+
+    <section class="sec01">
+        <div class="container">
+            <h2>3개 배열하기</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="이미지1">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="이미지2">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n03.jpg" alt="이미지3">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sec02">
+        <div class="container">
+            <h2>4개 배열하기</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="이미지1">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="이미지2">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n03.jpg" alt="이미지3">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n04.jpg" alt="이미지4">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sec03">
+        <div class="container">
+            <h2>5개 배열하기</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="이미지1">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="이미지2">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n03.jpg" alt="이미지3">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n04.jpg" alt="이미지">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n05.jpg" alt="이미지5">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sec04">
+        <div class="container">
+            <h2>6개 배열하기</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="이미지1">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="이미지2">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n03.jpg" alt="이미지3">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n04.jpg" alt="이미지">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n05.jpg" alt="이미지5">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n06.jpg" alt="이미지6">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+        </div>
+    </section>
+
+    <section class="sec05">
+        <div class="container">
+            <h2>3개 배열하기</h2>
+            <p>Lorem ipsum dolor sit.</p>
+            <figure>
+                <img src="../img/menu_n01.jpg" alt="이미지1">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+            <figure>
+                <img src="../img/menu_n02.jpg" alt="이미지2">
+                <p>Lorem, ipsum dolor.</p>
+                <a href="#">더보기</a>
+            </figure>
+        </div>
+    </section>
+
+</body>
+</html>
